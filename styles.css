@@ -1,0 +1,141 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), red), rgba(0, 0, 0, 0.75); /* Degrade branco com vermelho e camada preta com 75% de opacidade */
+    background-blend-mode: multiply; /* Mistura as camadas de fundo */
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Para posicionar a logo sobre a camada preta */
+    z-index: 1; /* Para manter o cabeçalho sobre as outras camadas */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    position: relative; /* Para posicionar o conteúdo sobre a camada preta */
+    z-index: 1; /* Para manter o conteúdo sobre as outras camadas */
+}
+
+section {
+    margin-bottom: 30px;
+    color: #ffffff; /* Cor do texto dentro das seções */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), red), rgba(0, 0, 0, 0.85); /* Degrade branco com vermelho e camada preta com 85% de opacidade */
+    background-blend-mode: multiply; /* Mistura as camadas de fundo */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative; /* Para posicionar o rodapé sobre a camada preta */
+    z-index: 1; /* Para manter o rodapé sobre as outras camadas */
+}
+
+
+/* Estilos para as bolinhas */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative; /* Para posicionar as bolinhas sobre a camada preta */
+    z-index: 1; /* Para manter as bolinhas sobre as outras camadas */
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    animation: float 3s ease-in-out infinite alternate; /* Adicionando animação de flutuação */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.circle img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Estilos para os quadrados com laterais redondas e brilho */
+.square {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    border-radius: 15px; /* Borda com laterais redondas */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Brilho ao redor */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o texto dentro dos quadrados */
+.square p {
+    color: #fff; /* Cor do texto */
+}
+
+/* Estilos para os quadrados com laterais redondas e brilho */
+.square {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    border-radius: 15px; /* Borda com laterais redondas */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Brilho ao redor */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço entre as seções */
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 500px; /* Defina uma largura máxima */
+    margin: 0 auto; /* Centralizar na tela */
+}
+
+/* Estilos para o texto dentro dos quadrados */
+.square h2, .square p {
+    color: #fff; /* Cor do texto */
+}
+
+/* Adicionar margem inferior para as seções, exceto a última */
+.square:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
